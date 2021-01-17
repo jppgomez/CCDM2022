@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="icon" href="images/logos/topicon.png" type="image/png">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/contacts.css">
+</head>
+<body>
+<header>
+    <div class="menu logo"><img src="images/logos/logo100x100.png" alt="logo" id="logo"><a href=""></a></div>
+    <div class="menu_index"><a href="index.html">HOME</a></div>
+    <div class="menu_about"><a href="about.html">SOBRE (CC-D+M)</a></div>
+    <div class="menu_speakers"><a href="dates.html">SPEAKERS</a></div>
+    <div class="menu_contacts"><a href="contacts.html">CONTACTOS</a></div>
+</header>
+<main>
+    <div class="main">
+        <div class="contacts_title"><h1>Contactos</h1></div>
+        <div class="contacts_text"><p>
+            <b>Organização:</b><br>
+            Pedro Martins<br>
+            Nuno Coelho<br>
+            <br>
+            <b>Telefone:</b><br>
+            239 700 600 <br>
+            <br>
+            <b>Email:</b><br>
+            cicloconversas@fct.uc.pt
+        </p></div>
+    </div>
+    <div class="empty"></div>
+    <div class="sub_container">
+        <h3 class="sub_title">Subscrever</h3>
+        <h4 class="sub_text">Fique a par das informações mais recentes</h4>
+            <form action="contacts_form.php" method="post" enctype="multipart/form-data">
+                <label for="first_name"></label><input type="text" id="first_name" name="first_name" placeholder="Nome">
+                <label for="last_name"></label><input type="text" id="last_name" name="last_name" placeholder="Apelido">
+                <label for="email"></label><input type="text" id="email" name="email" placeholder="Email">
+                <input type="submit" id="sub_button" value="Subscrever">
+            </form>
+    </div>
+    <div class="empty"></div>
+    <!--<div class="popup">
+        <div class="popup_text">
+            <div><a href="dates.html">Datas</a></div>
+            <div><a href="contacts.html">Contactos</a></div>
+        </div>
+        <img src="images/logos/logo100x100.png" alt="popup_img">
+    </div> !-->
+</main>
+<footer>
+    <div class="footer_text">CCDM 2022</div>
+</footer>
+<script src="JS/common.js"></script>
+</body>
+</html>

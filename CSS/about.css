@@ -1,0 +1,46 @@
+.splitbar {
+    grid-column: 1 / 13;
+    text-align: center;
+}
+.about_video {
+    grid-column: 1 / 13;
+}
+video{
+    grid-column: 1 / 13;
+    width:100%;
+}
+footer{
+    background-color: #009389;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 800px) {
+    .main_title {
+        grid-column: 2 / 5;
+    }
+
+    .main_text {
+        grid-column: 5 / 12;
+    }
+}
+
+/*TABLET AND MOBILE*/
+@media screen and (max-width:800px){
+    .main_title {
+        grid-column: 2 / 12;
+    }
+    .main_text {
+        grid-column: 2 / 12;
+    }
+}
+
+/*ANIMATIONS*/
+.main_title h1{
+    animation: titles ease-in 1s;
+}
+.main_text p{
+    animation: text ease-in 1s;
+}
+.splitbar p{
+    animation: text ease-in 2s;
+}

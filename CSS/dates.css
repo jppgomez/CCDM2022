@@ -1,0 +1,67 @@
+
+[class*="dates_"] img{
+    width: 100%;
+    height: auto;
+}
+footer{
+    background-color: #DF393D;
+    position: absolute;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 800px) {
+    .dates_title {
+        grid-column: 2 / 8;
+    }
+
+    .dates_joana {
+        grid-column: 1 / 4;
+    }
+
+    .dates_miguel {
+        grid-column: 4 / 7;
+    }
+
+    .dates_rui {
+        grid-column: 7 / 10;
+    }
+
+    .dates_susana {
+        grid-column: 10 / 13;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width:414px) and (max-width:800px){
+    .dates_title {
+        grid-column: 2 / 12;
+    }
+
+    .dates_joana {
+        grid-column: 2 / 7;
+    }
+
+    .dates_miguel {
+        grid-column: 7 / 12;
+    }
+
+    .dates_rui {
+        grid-column: 2 / 7;
+    }
+
+    .dates_susana {
+        grid-column: 7 / 12;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width:414px){
+    [class*="dates_"]{
+        grid-column: 2 / 12;
+    }
+}
+
+/*ANIMATION*/
+.dates_title h1{
+    animation: titles ease-in 1s;
+}

@@ -1,0 +1,120 @@
+[class*="sub_"] {
+    text-align: center;
+}
+.sub_title {
+    grid-column: 5 / 9;
+}
+.sub_text {
+    grid-column: 5 / 9;
+}
+.sub_container {
+    grid-column: 1 / 13;
+    display: inline-grid;
+    grid-template: inherit;
+    column-gap: inherit;
+}
+#last_name:focus{
+    border-bottom: #DF393D solid 4px;
+    transition: border-bottom-color ease-in-out 0.5s;
+}
+#sub_button{
+    background-color: #009389;
+}
+ footer{
+     background-color: #e88c1d;
+ }
+
+/*DESKTOP*/
+@media screen and (min-width: 800px) {
+    .contacts_title {
+        grid-column: 2 / 5;
+    }
+    .contacts_text {
+        grid-column: 6 / 12;
+    }
+    form {
+        grid-column: 5 / 9;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(4, 6.354166666666667vw);
+    }
+    #first_name {
+        grid-column: 1 / 3;
+    }
+    #last_name {
+        grid-column: 3 / 5;
+    }
+    #email {
+        grid-column: 1 / 5;
+    }
+    #sub_button {
+        grid-column: 1 / 5;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width:414px) and (max-width:800px){
+    .contacts_title {
+        grid-column: 2 / 12;
+    }
+    .contacts_text {
+        grid-column: 2 / 12;
+    }
+    form {
+        grid-column: 4 / 10;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(6, 5.208333333333333vw);
+    }
+    #first_name {
+        grid-column: 1 / 4;
+    }
+    #last_name {
+        grid-column: 4 / 7;
+    }
+    #email {
+        grid-column: 1 / 7;
+    }
+    #sub_button {
+        grid-column: 1 / 7;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width:414px) {
+    .contacts_title {
+        grid-column: 2 / 12;
+    }
+    .contacts_text {
+        grid-column: 2 / 12;
+    }
+    form {
+        grid-column: 4 / 10;
+        display: block;
+        column-gap: inherit;
+        grid-template-columns: repeat(4, 4.830917874396135vw);
+    }
+    #first_name {
+        grid-column: 4 / 10;
+    }
+    #last_name {
+        grid-column: 4 / 10;
+    }
+    #email {
+        grid-column: 4 / 10;
+    }
+    #sub_button {
+        grid-column: 4 / 10;
+    }
+}
+
+/*ANIMATION*/
+.contacts_title h1{
+    animation: titles ease-in 1s;
+}
+.contacts_text p{
+    animation: text ease-in 1s;
+}
+.sub_title, .sub_text{
+    animation: titles ease-in 2s;
+}

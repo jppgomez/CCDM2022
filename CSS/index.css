@@ -1,0 +1,231 @@
+.main{
+    height:100vh;
+}
+.slideshow{
+    height: 85vh;
+    margin: 15vh 0 0 0;
+}
+[class*="index_img"]{
+    width:100%;
+    height:auto;
+}
+
+.about {
+    grid-column: 1 / 13;
+    display: inline-grid;
+    grid-template: inherit;
+    column-gap: inherit;
+}
+.speakers {
+    grid-column: 1 / 13;
+    display: inline-grid;
+    grid-template: inherit;
+    column-gap: inherit;
+}
+#last_name:focus{
+    border-bottom: #009389 solid 4px;
+    transition: border-bottom-color ease-in-out 0.5s;
+}
+#sub_button{
+    background-color: #DF393D;
+}
+footer{
+    background-color: #60B162;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 800px) {
+    /*ABOUT*/
+    .about_title {
+        grid-column: 2 / 5;
+    }
+    .about_text {
+        grid-column: 6 / 12;
+    }
+    /*SPEAKERS*/
+    .speakers_title {
+        grid-column: 2 / 5;
+    }
+    .index_joana {
+        grid-column: 1 / 4;
+    }
+    .index_miguel {
+        grid-column: 4 / 7;
+    }
+    .index_rui {
+        grid-column: 7 / 10;
+    }
+    .index_susana {
+        grid-column: 10 / 13;
+    }
+    /*CONTACTS*/
+    .contacts {
+        grid-column: 1 / 7;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(6, 6.354166666666667vw);
+    }
+    [class*="contacts_"], [class*="subscribe_"] {
+        grid-column: 2 / 6;
+    }
+    /*SUB / FORM */
+    .subscribe {
+        grid-column: 7 / 13;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(6, 6.354166666666667vw);
+    }
+    .index_form {
+        grid-column: 1/7;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(6, 6.354166666666667vw);
+    }
+    #first_name {
+        grid-column: 2/4;
+    }
+    #last_name {
+        grid-column: 4/6;
+    }
+    #email {
+        grid-column: 2/6;
+    }
+    #sub_button {
+        grid-column: 2/6;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width:414px) and (max-width:800px){
+    /*ABOUT*/
+    .about_title {
+        grid-column: 2 / 5;
+    }
+    .about_text {
+        grid-column: 6 / 12;
+    }
+    /*SPEAKERS*/
+    .speakers_title {
+        grid-column: 2 / 5;
+    }
+    .index_joana {
+        grid-column: 1 / 7;
+    }
+    .index_miguel {
+        grid-column: 7 / 13;
+    }
+    .index_rui {
+        grid-column: 1 / 7;
+    }
+    .index_susana {
+        grid-column: 7 / 13;
+    }
+    /*CONTACTS*/
+    .contacts {
+        grid-column: 1 / 7;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(6, 5.208333333333333vw);
+    }
+    [class*="contacts_"], [class*="subscribe_"] {
+        grid-column: 2 / 6;
+    }
+    /*SUB / FORM */
+    .subscribe {
+        grid-column: 7 / 13;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(6, 5.208333333333333vw);
+    }
+    .index_form {
+        grid-column: 1/7;
+        display: inline-grid;
+        column-gap: inherit;
+        grid-template-columns: repeat(6, 5.208333333333333vw);
+    }
+    #first_name {
+        grid-column: 2/6;
+    }
+    #last_name {
+        grid-column: 2/6;
+    }
+    #email {
+        grid-column: 2/6;
+    }
+    #sub_button {
+        grid-column: 2/6;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width:414px){
+    /*ABOUT*/
+    .about_title {
+        grid-column: 2 / 12;
+    }
+    .about_text {
+        grid-column: 2 / 12;
+    }
+    /*SPEAKERS*/
+    .speakers_title {
+        grid-column: 2 / 12;
+    }
+    .index_joana {
+        grid-column: 1 / 13;
+    }
+    .index_miguel {
+        grid-column: 1 / 13;
+    }
+    .index_rui {
+        grid-column: 1 / 13;
+    }
+    .index_susana {
+        grid-column: 1 / 13;
+    }
+    /*CONTACTS*/
+    .contacts {
+        grid-column: 1 / 13;
+        column-gap: inherit;
+    }
+    /*SUB / FORM */
+    .subscribe {
+        grid-column: 1 / 13;
+        column-gap: inherit;
+    }
+    [class*="subscribe_"]{
+        grid-column: 2 / 12;
+    }
+    .index_form {
+        display: inline-grid;
+        column-gap: inherit;
+    }
+    #first_name {
+        grid-column: 2/12;
+    }
+    #last_name {
+        grid-column: 2/12;
+    }
+    #email {
+        grid-column: 2/12;
+    }
+    #sub_button {
+        grid-column: 2/12;
+    }
+}
+
+/*ANIMATIONS*/
+.slideshow h1{
+    animation: titles ease-in 1s;
+}
+.about_title h3{
+    animation: titles ease-in 2.5s;
+}
+.about_text p{
+    animation: text ease-in 2.5s;
+}
+.speakers_title h3{
+    animation: titles ease-in 3s;
+}
+.contacts_title, .contacts_text, .subscribe_title, .subscribe_text{
+    animation: titles ease-in 4s;
+}
