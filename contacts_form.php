@@ -20,7 +20,7 @@ file_put_contents($filename, "First Name: " . $f_name . "," . "Last Name: " . $l
 <body>
 <header>
     <div class="menu logo"><img src="images/logos/logo100x100.png" alt="logo" id="logo"><a href=""></a></div>
-    <div class="menu_index"><a href="index.html">HOME</a></div>
+    <div class="menu_index"><a href="home.html">HOME</a></div>
     <div class="menu_about"><a href="about.html">SOBRE (CC-D+M)</a></div>
     <div class="menu_speakers"><a href="dates.html">SPEAKERS</a></div>
     <div class="menu_contacts"><a href="contacts.html">CONTACTOS</a></div>

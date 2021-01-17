@@ -16,12 +16,12 @@ file_put_contents($filename, "First Name: " . $f_name . "," . "Last Name: " . $l
     <title>Home</title>
     <link rel="icon" href="images/logos/topicon.png" type="image/png">
     <link rel="stylesheet" href="CSS/common.css">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/home.css">
 </head>
 <body>
 <header>
     <div class="menu logo"><img src="images/logos/logo100x100.png" alt="logo" id="logo"><a href=""></a></div>
-    <div class="menu_index"><a href="index.html">HOME</a></div>
+    <div class="menu_index"><a href="home.html">HOME</a></div>
     <div class="menu_about"><a href="about.html">SOBRE (CC-D+M)</a></div>
     <div class="menu_speakers"><a href="dates.html">SPEAKERS</a></div>
     <div class="menu_contacts"><a href="contacts.html">CONTACTOS</a></div>
@@ -85,6 +85,6 @@ file_put_contents($filename, "First Name: " . $f_name . "," . "Last Name: " . $l
     <div class="footer_text">CCDM 2022</div>
 </footer>
 <script src="JS/common.js"></script>
-<script src="JS/index.js"></script>
+<script src="JS/home.js"></script>
 </body>
 </html>
