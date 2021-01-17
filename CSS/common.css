@@ -3,17 +3,17 @@
 @font-face {
     font-family: Atkinson Hyperlegible Regular;
     font-style: normal;
-    src: url("../font/Atkinson-Hyperlegible-Regular-102.svg");
+    src: url("../font/Atkinson-Hyperlegible-Regular-102.svg") format("svg");
 }
 @font-face {
     font-family: Atkinson Hyperlegible Italic;
     font-style: italic;
-    src: url("../font/Atkinson-Hyperlegible-Italic-102.svg");
+    src: url("../font/Atkinson-Hyperlegible-Italic-102.svg") format("svg");
 }
 @font-face {
     font-family: Atkinson Hyperlegible Bold;
     font-style: italic;
-    src: url("../font/Atkinson-Hyperlegible-Bold-102.svg");
+    src: url("../font/Atkinson-Hyperlegible-Bold-102.svg") format("svg");
 }
 @media screen and (min-width: 1050px) {
     body{
