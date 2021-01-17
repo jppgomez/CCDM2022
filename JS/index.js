@@ -31,3 +31,10 @@ susana.addEventListener("mouseenter", function(){
 susana.addEventListener("mouseleave", function(){
     susana.src = "images/speakers/susanacarvalhosq.png";
 });
+
+/*VIDEO*/
+let size = window.innerWidth;
+let video = document.querySelector("#index_video");
+if(size>800) video.src = "videos/slideshow_d.mp4";
+else if(size<800 && size>414) video.src = "videos/slideshow_t.mp4";
+else if(size<414) video.src = "videos/slideshow_m.mp4";
